@@ -24,6 +24,8 @@
 
 ---
 
+> GitHub is a code developing platform that helps developers create and store their code, as well as share it with others. It is implemented into Visual Studio Code in order to make the connection more seamless as developers work on their coding. Source control helps save the code as they go, and helps with adding their existing content to the users github account, whether to publish it privately or publicly.
+
 ### Markdown & Documentation
 
 ---
