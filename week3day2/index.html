@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineup</title>
+</head>
+<body>
+    <h1>Starting Lineup</h1>
+
+    <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+
+    
+    <Fieldset>
+        <legend>Status:</legend>
+<div>
+        <input type="radio"
+        name="lineup"
+        id="lineup">
+        <label for="lineup">Draft</label>
+
+        <input type="radio" name="lineup2" id="lineup2" checked>
+        <label for="lineup2">Final</label> 
+</div>
+
+    </Fieldset>
+<div>
+    <label for="date">Date:</label>
+    <select name="gameDate" id="gameDate">
+        <option value="mar20">March 20</option>
+        <option value="mar24">March 24</option>
+        <option value="april2">April 2</option>
+        <option value="april6">April 6</option>
+        <option value="april13">April 13</option>
+    </select>
+</div>
+
+<fieldset>
+    <legend>Players:</legend>
+    <div>
+    <input type="checkbox" name="player" id="player" value="Aarav Agarwal">
+    <label for="player1" >Aarav Agarwal</label>
+    
+</div>
+<div>
+    <input type="checkbox" name="player2" id="player2" value="Ava Johnson">
+    <label for="player2">Ava Johnson</label>
+</div>
+<div>
+    <input type="checkbox" name="player3" id="player3" value="Julio Ortiz">
+    <label for="player3">Julio Ortiz</label>
+</div>
+<div>
+    <input type="checkbox" name="player4" id="player4" value="Liam Rubio">
+    <label for="player4">Liam Rubio</label>
+</div>
+<div>
+    <input type="checkbox" name="player5" id="player5" value="Emma Witherspoon">
+    <label for="player5">Emma Witherspoon</label>
+</div>
+</fieldset>
+
+<input type="submit" value="Submit">
+    </form>
+</body>
+</html>
