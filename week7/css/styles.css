@@ -20,7 +20,7 @@ p {
 }
 
 nav {
-    background-color: #BBD686;
+    background-color: #C4A381;
     padding: 18px;
 
 }
@@ -35,6 +35,7 @@ nav ul {
 
 nav ul li {
     font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav ul li a {
@@ -44,4 +45,10 @@ nav ul li a {
 
 body {
     background-color: #EEF1BD;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #644536;
+    padding: 18px;
 }
