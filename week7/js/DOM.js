@@ -24,7 +24,7 @@ titleRef.innerHTML = "DOM Manipulation >:)";
 
 ulRef.innerHTML = "";
 
-const melons = ["Watermelon", "Cantaloupe", "Muskmelon", "Regular Melon", "Blind Melon", "Honeydew"];
+const melons = [ "Watermelon", "Cantaloupe", "Muskmelon", "Regular Melon", "Blind Melon", "Honeydew"];
 
 for (let i = 0; i < melons.length; i++) {
     const melon = melons[i];
@@ -32,3 +32,16 @@ for (let i = 0; i < melons.length; i++) {
     
 }
 
+titleRef.style.backgroundColor = "red";
+titleRef.style.color = "00ff00";
+titleRef.style.fontSize = "30px";
+
+document.querySelector("body > ul li").style.display = "none";
+
+document.querySelector("body > ul li").style.display = "list-item";
+
+const firstARef = document.querySelector("a");
+console.log("first a:", firstARef);
+
+firstARef.href = "dom.html";
+firstARef.setAttribute("target", "_blank");
