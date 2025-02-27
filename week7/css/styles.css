@@ -52,3 +52,10 @@ h1 {
     color: #644536;
     padding: 18px;
 }
+
+.item {
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 16px;
+    width: 200px;
+}
