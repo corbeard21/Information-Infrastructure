@@ -21,10 +21,12 @@ const person = {
 
 console.log (person.name);
 
+
+
 person.sayHello ();
 
-function whatDoesTheFoxSay ( {
+function whatDoesTheFoxSay () {
     console.log ("Hatee-Hatee-Hatee-ho!");
-})
+}
 
 whatDoesTheFoxSay();
