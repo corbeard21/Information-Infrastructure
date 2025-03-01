@@ -3,7 +3,7 @@ const titleRef = document.getElementById("gallery");
 
 console.log(titleRef);
 
-const itemsRef = document.getElementsByClassName("item");
+const itemsRef = document.getElementsByClassName("photo");
 
 console.log(itemsRef);
 
@@ -11,7 +11,7 @@ const altTitleRef = document.querySelector("#gallery");
 
 console.log(altTitleRef);
 
-const itemsAltRef = document.querySelectorAll(".item");
+const itemsAltRef = document.querySelectorAll(".photo");
 
 console.log(itemsAltRef);
 
