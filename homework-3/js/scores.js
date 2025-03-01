@@ -24,7 +24,7 @@ const scores = ["95", "72", "88", "45", "60", "79", "82", "91", "50", "38"];
 
 for (let i = 0; i < scores.length; i++) {
     const score = scores[i];
-    ulRef.innerHTML += "<li class='items' >" + scores + "</li>";
+    ulRef.innerHTML += "<li class='items' >" + score + "</li>";
     
 }
 
