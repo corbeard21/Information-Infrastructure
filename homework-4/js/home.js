@@ -39,6 +39,7 @@ function startAdventure() {
 }
 
 function choosePath(e) {
+  const adventureRef = document.querySelector("#adventure");
   console.log(e.currentTarget);
   const pathName = e.currentTarget.dataset.pathName;
   const pathImage = e.currentTarget.dataset.pathImage;
