@@ -39,3 +39,14 @@ nav a:hover {
   text-decoration-style: wavy;
   text-underline-offset: 3px;
 }
+h1 {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+h2 {
+  margin-left: 10px;
+}
+#dreams {
+  margin-left: 25px;
+}
