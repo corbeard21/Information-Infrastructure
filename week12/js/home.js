@@ -9,19 +9,19 @@ import {
 
 const db = getFirestore(app);
 
-const hadCollection = collection(db, "hopesanddreams");
+const dreamCollection = collection(db, "hopesanddreams");
 
 const dreamsRef = document.querySelector("#dreams");
 
 const dreamFormRef = document.querySelector("#new-dream");
 const dreamTextRef = document.querySelector("#dream-text");
 
-async function getHad() {
-  const hadDocs = await getDocs(hadCollection);
+async function getDreams() {
+  const dreamDocs = await getDocs(dreamCollection);
   console.log("Hungry hippos");
   dreamsRef.innerHTML = "";
-  for (let i = 0; i < hadDocs.docs.length; i++) {
-    const currentDream = hadDocs.docs[i];
+  for (let i = 0; i < dreamDocs.docs.length; i++) {
+    const currentDream = dreamDocs.docs[i];
     console.log(currentDream.id, currentDream.data());
 
     const dreamData = currentDream.data();
@@ -33,7 +33,14 @@ async function addNewDream(e) {
   e.preventDefault();
 
   const dreamTextValue = dreamTextRef.value;
-  const newDream = await addDoc(hadCollection, { text: dreamTextValue });
+
+  if (dreamTextValue.trim() === "") {
+    alert("Please enter a valid dream");
+  } else {
+    const newDream = await addDoc(dreamCollection, {
+      text: dreamTextValue,
+    });
+  }
 
   console.log(newDream);
 
